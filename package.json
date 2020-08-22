@@ -1,14 +1,11 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "plataforma de questoes e revista digital",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
-  "keywords": [
-    "novo_doc"
-  ],
   "author": "sergio",
   "license": "ISC",
   "dependencies": {
