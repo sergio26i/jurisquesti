@@ -1,0 +1,16 @@
+{
+  "name": "init_demo",
+  "version": "1.0.0",
+  "description": "description novo doc",
+  "main": "main.js",
+  "scripts": {
+    "test": "H"
+  },
+  "keywords": [
+    "novo",
+    "doc",
+    "pck"
+  ],
+  "author": "sergio",
+  "license": "ISC"
+}

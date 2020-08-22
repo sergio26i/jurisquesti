@@ -1,0 +1,420 @@
+
+body{
+    margin: 0;
+    font-size: 16px;
+    background-image: url("/images/banner2.png");
+	background-size:cover;
+    font-weight: 400;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.menu-left{
+	display:flex;
+	
+}
+.menu-left p{
+	color: #313131;
+	font-size: 16px;
+	margin: -3px 15px;
+	margin-left: 110px;
+	font-family: myriad pro regular;
+	font-weight: 800;
+}
+.menu-left img{
+	width: 40%;
+	margin-top: -15px;
+
+}
+.menu-left img:hover{
+	opacity: 0.5;
+}
+.sign-in{
+	width:220px;
+	height: 35px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	border:none;
+	color:#ffffff;
+	background-color: #faa41a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: calibri;
+	font-weight: bold;
+	box-shadow:  2px 2px 6px rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 12px 60px;
+    padding-bottom: 0px;
+    background-color:#eeeeee;
+}
+.sign-in:hover{
+	background-color: #2b1d75;
+	color:#FFFFFF;
+	transition: all ease 0.2s;
+	text-decoration: underline;
+}
+.custom-box{
+    max-width: 700px;
+    background-color:#eeeeee;
+    margin: 100px auto;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    padding: 30px;
+    border-radius: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+    animation: fadeInRight 1s ease;
+}
+
+.custom-box::before;
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+      
+.custom-box.hide{
+    display: none;
+}
+.home-box h3{
+    font-size: 18px;
+    color: #313131;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 25px;
+    border-bottom: 1px solid #313131;
+}
+
+.home-box p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    line-height: 22px;
+    color: #313131;
+    font-weight: 600;
+    border: 1px solid #313131;
+
+}
+
+.home-box p span{
+    font-weight: 600;
+}
+
+.home-box .btn{
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 0.8rem 2.8rem;
+    margin-top: 0;
+    margin-left: 32vh;
+    background: #2b1d75;
+    border: none;
+    display: flex;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-family: myriad pro;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+.btn:hover{
+    transition: all ease 0.2s;
+	text-decoration: underline;
+	background-color: #faa41a;
+	color: #ffffff;
+}
+.btn-3:hover {
+    transition: all ease 0.2s;
+	text-decoration: underline;
+	background-color: #faa41a;
+	color: #ffffff;
+}
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn
+.quiz-box .answers-indicator{
+    width: 100%;
+    float: left;
+}
+.quiz-box .question-number{
+    font-size: 18px;
+    color: #313131;
+    font-weight: 600;
+    border-bottom: 1px solid #313131;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+.quiz-box .question-text{
+    font-size: 22px;
+    color: #313131;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+.quiz-box .option-container .option{
+    background-color: #a1a1a144;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #313131;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+.quiz-box .option-container .option:hover{
+    text-decoration: underline ;
+    background: #313131;
+    color: #ffffff;
+}
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1
+    }
+}
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+    transform: translateX(0%)
+    }
+}
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards
+} 
+.quiz-box .option-container .option.wrong{
+    color: #ffffff
+}
+.quiz-box .option-container .option.correct{
+    color: #ffffff
+}
+.quiz-box .btn{
+    margin: 15px 0;
+}
+.quiz-box .answers-indicator{
+    border-top: 1px solid #313131;
+}
+.quiz-box .answers-indicator div{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-right: 3px;
+    margin-top: 15px;
+}
+.quiz-box .answers-indicator div.correct{
+    background-color: green;
+    background-image: url("/images/correto.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.quiz-box .answers-indicator div.wrong{
+    background-color: red;
+    background-image: url("/images/errado.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result-box{
+    text-align: center;
+}
+.result-box hide{
+    display: none;
+}
+.result-box h1{
+    font-size: 30px;
+    line-height: 42px;
+    color: #313131;
+}
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px;
+    margin-left: auto;
+}
+.result-box table td{
+    border: 1px solid #313131;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #313131;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+.result-box .btn-01{
+    padding: 0.8rem 2.8rem;
+    background: #2b1d75;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-family: myriad pro;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.result-box .btn-01:hover{
+    transition: all ease 0.2s;
+	text-decoration: underline;
+	background-color: #faa41a;
+    color: #ffffff;
+}
+.result-box .btn-02{
+    padding: 0.8rem 2.8rem;
+    background: #2b1d75;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-family: myriad pro;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.result-box .btn-02:hover{
+    transition: all ease 0.2s;
+	text-decoration: underline;
+	background-color: #faa41a;
+    color: #ffffff;
+}
+footer{
+    height: 60px;
+	background-color:#353745;
+    align-content: center;
+    box-sizing: border-box;
+}
+.copyright{
+	font-family: calibri;
+	font-size:12px;
+    padding-top: 22px;
+    text-align: center;
+	align-content: center;
+	color: #ffffff;
+}
+@media(max-width:360px){
+    body{
+        width: 60%;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+    }
+    .menu-left p{
+        display: none;
+    }
+    .menu-left img{
+        width: 150%;
+        margin-left: -50px;
+        
+    }
+    .sign-in{
+        width: 800px;
+        font-size: 16px;
+        margin-right: -40px;
+    }
+    .custom-box{
+        width: 90%;
+        overflow: hidden;
+    }
+    .home-box .btn{
+        margin-left: 12px;
+    }
+    .quiz-box .question-text{
+        font-size: 18px;
+    }
+    .quiz-box .option-container .option{
+        margin-top: 10px;
+    }
+    .home-box .btn{
+        display: flex;
+    }
+    .result-box .btn-02{
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+
+}
+@media(max-width:768px){
+    body{
+        width: 100%;
+    }
+    .menu-left p{
+        font-size: 12px;
+        margin-left: -160px;
+    }
+    .menu-left img{
+        margin-right: -30px;
+    }
+    .custom-box{
+        margin-bottom: 540px;
+    }
+    .btn{
+        margin-left: 210px;
+    }
+}
+@media(max-width:1024px){
+    body{
+        width: 100%;
+    }
+    .custom-box{
+        margin-bottom: 880px;
+    }
+    .menu-left p{
+        font-size: 18px;
+        margin-left: -110px;
+    }
+    .btn{
+        width: 240px;
+        padding-left: 55px;
+        margin-left: 200px;
+    }
+    
+}

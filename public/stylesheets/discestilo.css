@@ -1,0 +1,248 @@
+
+body{
+    margin: 0;
+    font-size: 16px;
+	background-image: url("/images/banner2.png");
+	background-size:cover;
+    font-weight: 400;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.menu-left{
+	display:flex;
+	
+}
+.menu-left p{
+	color: #313131;
+	font-size: 16px;
+	margin: -3px 15px;
+	margin-left: 110px;
+	font-family: myriad pro regular;
+	font-weight: 800;
+}
+.menu-left img{
+	width: 40%;
+	margin-top: -15px;
+
+}
+.menu-left img:hover{
+	opacity: 0.5;
+}
+.sign-in{
+	width:220px;
+	height: 35px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	border:none;
+	color:#ffffff;
+	background-color: #faa41a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: calibri;
+	font-weight: bold;
+	box-shadow:  2px 2px 6px rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 12px 60px;
+    padding-bottom: 0px;
+    background-color:#eeeeee;
+}
+.sign-in:hover{
+	background-color: #2b1d75;
+	color:#FFFFFF;
+	transition: all ease 0.2s;
+	text-decoration: underline;
+}
+
+.custom-box{
+	max-width: 680px;
+	position: center;
+    background: #eeeeee;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 330px;
+    padding: 30px;
+    border-radius: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+	border-bottom: 1px solid #b1aeae;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.1);
+}
+
+.custom-box::before;
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.home-box h3{
+    font-size: 18px;
+    color: #313131;
+	font-weight: 1000;
+	font-family: Myriad pro;
+    text-transform: capitalize;
+	margin-bottom: 25px;
+	padding-left: 10px;
+	line-height: 25px;
+	border: 1px solid #313131;
+}
+
+.btn {
+    width: 280px;
+    padding: 0.8rem 2.8rem;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+	border-radius: 30px;
+	border: none;
+	color: #ffffff;
+	font-family: myriad pro;
+    font-weight: 600;
+	font-size: 16px;
+    background: #ffa500;
+	align-content: center;
+    cursor: pointer;
+}
+.btn:hover{
+	transition: all ease 0.2s;
+	text-decoration: underline;
+	background-color: #2b1d75;
+	color: #ffffff;
+}
+
+footer{
+	background-color:#353745;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.dw-footer ul{
+	font-family: calibri;
+	padding-top:0px 20px;
+	list-style-type: none;
+	
+}
+.dw-footer h1{
+	color: #ffffff;
+	font-size:20px;
+	font-family: calibri;
+	margin-bottom: 10px;
+}
+.dw-footer ul li a{
+	font-size: 16px;
+	color:#ffffff;
+	text-decoration: none;
+	
+}
+
+.dw-footer{
+	display: flex;
+	justify-content:space-between;
+	padding:3% 0px;
+	margin:5px;
+	width:80%;
+	flex-wrap: wrap;
+	color: #ffffff;
+	
+}
+
+.social-icons{
+	display:flex;
+}
+.social-icons a{
+	width: 35px;
+	height:35px;
+	margin:0px 5px;
+	background-color:#424356;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.social-icons i{
+	color:#FFFFFF;
+	font-size: 14px;
+	list-style-type: none;
+	
+}
+
+.copyright{
+	font-family: calibri;
+	font-size:12px;
+	margin:10px;
+	text-align: center;
+	color: #ffffff;
+}
+.dw-footer ul li a:hover{
+	color:#9697A0;
+	
+}
+.social-icons a:hover{
+	background-color:#9a9ff6;
+	transition: all ease 0.5s;
+}
+
+.social-icons a:hover i{
+	color: #424356;
+}
+@media(max-width:360px){
+    body{
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+		position: relative;
+    }
+    .menu-left p{
+        display: none;
+    }
+    .menu-left img{
+		width: 80%;
+		margin-left: -20px;
+		margin-top: -12px;
+        
+    }
+    .sign-in{
+		width: 480px;
+		font-size: 14px;
+		margin-right: -45px;
+		margin-left: -20px;
+		
+	}
+	.home-box h3{
+		font-size: 14px;
+	}
+	nav{
+		margin-right: -36px;
+		margin-left: -36px;
+	}
+    .custom-box{
+		width: 100%;
+		margin-left: 18px;
+	}
+    .home-box .btn{
+		width: 260px;
+		padding: 0.8rem 2rem;
+		font-size: 14px;
+		margin-left: 1px;
+    }
+    .quiz-box .question-text{
+        font-size: 18px;
+    }
+    .quiz-box .option-container .option{
+        margin-top: 10px;
+    }
+}
