@@ -2,9 +2,9 @@
   "name": "package.json",
   "version": "1.0.0",
   "description": "plataforma de questoes e revista digital",
-  "main": "main.js",
+  "main": "node index.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sergio",
