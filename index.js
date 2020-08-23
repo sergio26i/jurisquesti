@@ -12,7 +12,7 @@ app.get("/disciplinas.ejs", (req, res) => {
     res.render("disciplinas.ejs");
 });
 
-app.get("/index.ejs", (req, res) => {
+app.get("/usr/src/app/views/index.ejs", (req, res) => {
     res.render("index.ejs");
 });
 
