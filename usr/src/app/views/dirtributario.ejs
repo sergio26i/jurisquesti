@@ -1,0 +1,73 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>Jurisquesti - Acreditando no conhecimento!</title>
+            
+            <meta charset = "utf-8">
+            <meta name = "viewport" content = "width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <link rel = "stylesheet" href = "/stylesheets/estilotribut.css">
+        </head>
+
+        <body>
+
+            <div class = "home-box custom-box">
+                <h3>Instrução: </h3>
+                <p>Número Total de Questões: <span class = "total-question">5</span></p>
+                <button type = "button" class = "btn"  onclick= "startQuiz()">Dar início ao Quiz</button>
+                <a href = "/index.ejs"><button type = "button" class = "btn-3"  >Voltar Para A Página Inicial</button></a>
+            </div>
+
+            <div class = "quiz-box custom-box hide">
+                <div class = "question-number">
+                    
+                </div>
+                <div class = "question-text">
+                     
+                </div>
+                <div class = "option-container">
+                   
+                </div>
+                <div class = "next-question-btn">
+                    <button type = "button" class = "btn" onclick="next()">Próxima</button>
+                </div>
+                <div class = "answers-indicator">
+                    
+                </div>
+            </div>
+
+            <div class = "result-box custom-box hide">
+                <table>
+                <h1>Boletim de Desempenho</h1>
+                    <tr>
+                        <td>Total de Questões</td>
+                        <td><span class="total-question"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Tentativas</td>
+                        <td><span class="total-attempt"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Corretas</td>
+                        <td><span class="total-correct"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Erradas</td>
+                        <td><span class="total-wrong"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Porcentagem</td>
+                        <td><span class="percentage"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Seu Placar</td>
+                        <td><span class="total-score"></span></td>
+                    </tr>
+                </table>
+                <button type="button"   class="btn" onclick = "tryAgainQuiz()">Tente de Novo</button>
+                <button type="button"   class="btn" onclick = "goToHome()">Vá Para o Início</button>
+            </div>
+    <script src="/javascripts/tributario.js"></script>
+    <script src="/javascripts/tributario2.js"></script>
+    </body>
+    </html>
