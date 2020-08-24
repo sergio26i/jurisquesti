@@ -6,7 +6,7 @@ app.use(express.static("public"));
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'views'));
+
 
 //Routes
 
@@ -18,7 +18,7 @@ app.get("/index", (req, res) => {
     res.render("index");
 });
 
-app.get("/dirconst.ejs", (req, res) => {
+app.get("/dirconst", (req, res) => {
     res.render("dirconst");
 });
 
@@ -26,15 +26,15 @@ app.get("/diradminst", (req, res) => {
     res.render("diradminst");
 });
 
-app.get("/dirtrabalho.ejs", (req, res) => {
+app.get("/dirtrabalho", (req, res) => {
     res.render("dirtrabalho");
 });
 
-app.get("/dirproctrabalho.ejs", (req, res) => {
+app.get("/dirproctrabalho", (req, res) => {
     res.render("dirproctrabalho");
 });
 
-app.get("/dircivil.ejs", (req, res) => {
+app.get("/dircivil", (req, res) => {
     res.render("dircivil");
 });
 
@@ -43,18 +43,18 @@ app.get("/dirproccivil", (req, res) => {
 });
 
 app.get("/dirpenal", (req, res) => {
-    res.render("dirpenal.ejs");
+    res.render("dirpenal");
 });
 
 app.get("/dirtributario", (req, res) => {
     res.render("dirtributario");
 });
 
-app.get("/dirprocpenal.ejs", (req, res) => {
+app.get("/dirprocpenal", (req, res) => {
     res.render("dirprocpenal");
 });
 
-app.get("/raciociniolog.ejs", (req, res) => {
+app.get("/raciociniolog", (req, res) => {
     res.render("raciociniolog");
 });
 
