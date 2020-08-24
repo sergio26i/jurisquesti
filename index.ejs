@@ -1,165 +1,75 @@
-<!--doctype html-->
-<html lang = pt-br>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jurisquesti - Acreditando no Conhecimento!</title>
-<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
+const express = require('express');
+const app = express();
+const favicon = require('serve-favicon');
 
-<!--using FontAwesome-->
-<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<section class="main">
-<nav>
-<!--logo-------------------->
-<div class="menu-left">
-<a href = "#"><img class="logo" src="/images/logojurisquesti.png"></a>
-<p>Acreditando no Conhecimento!</p>
-</div>
-<!--sign-in----------------------------->
-<a href="#" class="sign-in">Assinar</a>
-</nav>
-</section>
-<!--plans-->
-	
-	<!--sevices-heading-->
-	<section class="services">
-	<div class = "button-quest">
-	<a href="/disciplinas.ejs"><button class="service-button-1">Testar Conhecimento</button></a>	
-	</div>
-	<div class="s-heading">
-	<p>Sobre a Plataforma</p>	
-	<p>Acompanhe conteúdo jurídico atualizado com uma excelente abordagem.</p>	
-	</div>
-	
-	<div class="services-container">
-	<!--1-box---------------------->
-	<div class="s-box">
-		<div class="s-icon front-icon"></div>
-		<p>Aqui você pode testar seus conhecimentos, fazendo os simulados quantas vezes achar conveniente, através do acesso ao questionário.</p>
-	</div>
-	<!--2----------------------->
-	<div class="s-box">
-		<div class="s-icon back-icon"></div>
-		<p>Além do desempenho, você também pode ter acesso aos assuntos mais em pauta no âmbito jurídico e mais cobrados em Concursos Públicos.</p>
-			
-	</div>
-	<!--3----------------------->
-	<div class="s-box">
-		<div class="s-icon seo-icon"></div>
-		<p>Ao assinar a Revista Digital 'Jurisquesti', você passa a ter contato com excelentes abordagens feitas por admiráveis nomes da área.</p>
-		
-	</div>
-	<!--4----------------------->
-	<div class="s-box">
-		<div class="s-icon gui-icon"></div>
-		<p>Em tempos de conturbados momentos, nada melhor do que bons esclarecimentos sobre as constantes mudanças ocorrendo em muitas vertentes jurídicas.</p>
-		
-	</div>
-	
-	
-	</div>
-	</section>
-	<!--conatct-box------------------->
-	<div class="contact">
-	<img src = "/images/Revista juris questi.png" alt = "revista Jurisquesti">
-	<button class="contact-btn">Assinar Revista</button>
-	</div>
-	<section class="palns">
-	<!--plans-heading------------------------------------>
-	<div class="p-heading">
-	<p>Profissionais</p>	
-	<p>Muita sapiência e ótima explanação no que se refere aos assuntos.</p>	
-	</div>
-	<!--plan-conatiner-->
-		<div class="p-box-conatiner">
-	<!--plan-box-1-->
-	<div class="p-box">
-	<!--plan-box-heading-->
-	<!--price-->
-	<div class="price">
-	<img src= "/images/fulana.png" alt= "prof-1">
-	<p>Dr Fulana</p>
-	</div>
-	<!--plan-box-details-->
-	<p class="p-box-details">Formou-se em Direito pela USP em 2010, desde quando era jovem.</p>
-	<!--price-button-->
-	</div>
-	<!--plan-box-2-->
-	<div class="p-box">
-		<!--plan-box-heading-->
-	<!--price-->
-	<div class="price">
-	<img src= "/images/beltrano.png" alt= "prof-2">
-	<p>Dr Beltrana</p>
-	</div>
-	<!--plan-box-details-->
-	<p class="p-box-details">Formou-se em Direito pela UFPI em 2010, desde quando era jovem.</p>
-	<!--price-button-->	
-	</div>
-	<!--plan-box-3-->
-	<div class="p-box">
-		<!--plan-box-heading-->
-	<!--price-->
-	<div class="price">
-	<img src= "/images/ciclano.png" alt= "prof-3">
-	<p>Dr Ciclano</p>
-	</div>
-	<!--plan-box-details-->
-	<p class="p-box-details">Formou-se em Direito pela UFBA em 2010, desde quando era jovem.</p>
-	<!--price-button-->	
-	</div>
-	<!--plan-box-4-->
-	<div class="p-box">
-		<!--plan-box-heading-->
-	<!--price-->
-	<div class="price">
-	<img src= "/images/trelano.png" alt= "prof-4">
-	<p>Dr Trelano</p>
-	</div>
-	<!--plan-box-details-->
-	<p class="p-box-details">Formou-se em Direito pela USP em 2010, desde quando era jovem.</p>
-	<!--price-button-->	
-	</div>
-	</div>
-	</section>
-	</section>
-	<!--footer-->
-	<footer>
-	<!---------------------------->
-	<div class="dw-footer">
-	<!--1-->
-		<ul>
-	<h1>Equipe de Profissionais</h1>
-	<li><a href="#">Doutora Fulana</a></li>
-	<li><a href="#">Doutora Beltrana</a></li>
-	<li><a href="#">Doutor Ciclano</a></li>
-	</ul>
-	<!--2-->
-	<ul>
-	<h1>Canal</h1>
-	<li><a href="#">Video Tutorial</a></li>
-	<li><a href="#">Website</a></li>
-	<li><a href="#">Bolgs</a></li>
-	</ul>
-	
-	<!--social-->
-	<div class="social">
-	<h1>Mídias Sociais</h1>
-	<div class="social-icons">
-	<a href="#"><i class="fab fa-facebook-f"></i></a>
-	<a href="#"><i class="fab fa-twitter"></i></a>
-	<a href="#"><i class="fab fa-instagram"></i></a>
-	<a href="#"><i class="fab fa-youtube"></i></a>
-	</div>
-	</div>
-	<!--copyright-->
-	<div class = "copy">
-    <p class="copyright">@2020.Todos os direitos reservados para P_lógica</p>
-	</div>
-	</footer>
-<script src="index.js"></script>
-</body>
-</html>
+app.use(express.static("public"));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
+
+app.set('view engine', 'ejs')
+
+//Routes
+
+app.get("/disciplinas.ejs", (req, res) => {
+    res.render("disciplinas.ejs");
+});
+
+app.get("/index.ejs", (req, res) => {
+    res.render("index.ejs");
+});
+
+app.get("/dirconst.ejs", (req, res) => {
+    res.render("dirconst.ejs");
+});
+
+app.get("/diradminst.ejs", (req, res) => {
+    res.render("diradminst.ejs");
+});
+
+app.get("/dirtrabalho.ejs", (req, res) => {
+    res.render("dirtrabalho.ejs");
+});
+
+app.get("/dirproctrabalho.ejs", (req, res) => {
+    res.render("dirproctrabalho.ejs");
+});
+
+app.get("/dircivil.ejs", (req, res) => {
+    res.render("dircivil.ejs");
+});
+
+app.get("/dirproccivil.ejs", (req, res) => {
+    res.render("dirproccivil.ejs");
+});
+
+app.get("/dirpenal.ejs", (req, res) => {
+    res.render("dirpenal.ejs");
+});
+
+app.get("/dirtributario.ejs", (req, res) => {
+    res.render("dirtributario.ejs");
+});
+
+app.get("/dirprocpenal.ejs", (req, res) => {
+    res.render("dirprocpenal.ejs");
+});
+
+app.get("/raciociniolog.ejs", (req, res) => {
+    res.render("raciociniolog.ejs");
+});
+
+app.get("/dirprevidenciario.ejs", (req, res) => {
+    res.render("dirprevidenciario.ejs");
+});
+
+app.get("/", (req, res) => {
+    res.render("index.ejs");
+})
+
+app.get("*", (req, res) => {
+    res.send("That'a 404");
+})
+
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log('Umbler listening on port %s', port);
+});
