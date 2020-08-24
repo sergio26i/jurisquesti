@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 const favicon = require('serve-favicon');
 
-app.use(express.static("views"));
 app.use(express.static("public"));
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
+
+app.set('view engine', 'ejs')
 
 //Routes
 
@@ -12,7 +13,7 @@ app.get("/disciplinas.ejs", (req, res) => {
     res.render("disciplinas.ejs");
 });
 
-app.get("/usr/src/app/views/index.ejs", (req, res) => {
+app.get("/index.ejs", (req, res) => {
     res.render("index.ejs");
 });
 
