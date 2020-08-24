@@ -6,63 +6,64 @@ app.use(express.static("public"));
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'));
 
 //Routes
 
-app.get("/disciplinas.ejs", (req, res) => {
-    res.render("disciplinas.ejs");
+app.get("/disciplinas", (req, res) => {
+    res.render("disciplinas");
 });
 
-app.get("/index.ejs", (req, res) => {
-    res.render("index.ejs");
+app.get("/index", (req, res) => {
+    res.render("index");
 });
 
 app.get("/dirconst.ejs", (req, res) => {
-    res.render("dirconst.ejs");
+    res.render("dirconst");
 });
 
-app.get("/diradminst.ejs", (req, res) => {
-    res.render("diradminst.ejs");
+app.get("/diradminst", (req, res) => {
+    res.render("diradminst");
 });
 
 app.get("/dirtrabalho.ejs", (req, res) => {
-    res.render("dirtrabalho.ejs");
+    res.render("dirtrabalho");
 });
 
 app.get("/dirproctrabalho.ejs", (req, res) => {
-    res.render("dirproctrabalho.ejs");
+    res.render("dirproctrabalho");
 });
 
 app.get("/dircivil.ejs", (req, res) => {
-    res.render("dircivil.ejs");
+    res.render("dircivil");
 });
 
-app.get("/dirproccivil.ejs", (req, res) => {
-    res.render("dirproccivil.ejs");
+app.get("/dirproccivil", (req, res) => {
+    res.render("dirproccivil");
 });
 
-app.get("/dirpenal.ejs", (req, res) => {
+app.get("/dirpenal", (req, res) => {
     res.render("dirpenal.ejs");
 });
 
-app.get("/dirtributario.ejs", (req, res) => {
-    res.render("dirtributario.ejs");
+app.get("/dirtributario", (req, res) => {
+    res.render("dirtributario");
 });
 
 app.get("/dirprocpenal.ejs", (req, res) => {
-    res.render("dirprocpenal.ejs");
+    res.render("dirprocpenal");
 });
 
 app.get("/raciociniolog.ejs", (req, res) => {
-    res.render("raciociniolog.ejs");
+    res.render("raciociniolog");
 });
 
 app.get("/dirprevidenciario.ejs", (req, res) => {
-    res.render("dirprevidenciario.ejs");
+    res.render("dirprevidenciario");
 });
 
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("index");
 })
 
 app.get("*", (req, res) => {
