@@ -18,7 +18,7 @@ a{
 .main{
 
     height:100vh;
-	background-image:url("/images/banner2.png");
+	background-image:url("banner2.png");
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size:cover;	
