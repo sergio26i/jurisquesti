@@ -23,23 +23,25 @@ a{
 	background-repeat: no-repeat;
 	background-size:cover;	
 }
-
 .menu-left{
 	display:flex;
 	
 }
 .menu-left p{
-	color: #3d3d3e;
-	background: #2b1d75;
-	font-size: 16px;
+	color: #ffffff;
+	background: #353745;
+	font-size: 14px;
 	margin: -3px 15px;
-	margin-left: 110px;
+	margin-left: -80px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
 	font-family: myriad pro regular;
-	font-weight: 800;
+	font-weight: 500;
+	border-radius: 5px;
 }
 .menu-left img{
-	width: 40%;
-	margin-top: -15px;
+	width: 35%;
+	margin-top: -10px;
 	display: flex;
 
 }
@@ -49,6 +51,8 @@ a{
 .sign-in{
 	width:100px;
 	height: 35px;
+	margin-left: 0;
+	margin-right: 5px;
 	margin-bottom: 10px;
 	border-radius: 20px;
 	border:none;
@@ -62,12 +66,15 @@ a{
 	box-shadow:  2px 2px 6px rgba(0,0,0,0.1);
 }
 nav{
+	width: 68%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    padding: 12px 60px;
-    padding-bottom: 0px;
-    background-color:#eeeeee;
+    padding: 12px 40px;
+	padding-bottom: 0px;
+	margin-left: 13.5rem;
+	background-color:#eeeeee;
+	position: fixed;
 }
 .sign-in:hover{
 	background-color: #2b1d75;
