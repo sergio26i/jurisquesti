@@ -187,6 +187,14 @@ footer{
 	text-align: center;
 	color: #ffffff;
 }
+.copyright a{
+	color: #faa41a;
+	cursor: pointer;
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
 .dw-footer ul li a:hover{
 	color:#9697A0;
 	
