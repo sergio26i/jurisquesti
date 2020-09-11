@@ -18,7 +18,7 @@ a{
 .main{
 
     height:100vh;
-	background-image:url("/images/banner2.png");
+	background-image:url("/images/fundo int.png");
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size:cover;	
@@ -74,6 +74,7 @@ nav{
 	padding-bottom: 0px;
 	margin-left: 13.75rem;
 	background-color:#eeeeee;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
 	position: fixed;
 }
 .sign-in:hover{
@@ -126,14 +127,11 @@ nav{
 	
 }
 .g-heading p{
-
 	font-weight: bold;
 	font-size: 20px;
 	color: #000000;
 	margin: 0px 10px;
-	line-height: 25px;
-	
-	
+	line-height: 25px;	
 }
 .g-heading{
 	display: flex;
@@ -163,6 +161,7 @@ nav{
 	width:40%;
 	text-align: center;
 	margin:10px;
+	
 }
 .s-heading p:nth-child(1){
 	color: #ffffff;
@@ -188,7 +187,7 @@ nav{
 	width: 220px;
 	padding: 20px;
 	background-color: #eeeeee;
-	box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 	display: flex;
 	text-align: center;
 	flex-direction: column;
