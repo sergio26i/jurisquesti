@@ -18,7 +18,7 @@ a{
 .main{
 
     height:100vh;
-	background-image:url("/images/fundo int.png");
+	background-image:url("/images/fundo intel 2.png");
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size:cover;	
@@ -37,7 +37,6 @@ a{
 	padding: 5px 10px;
 	font-family: myriad pro regular;
 	font-weight: 500;
-	border-radius: 5px;
 }
 .menu-left img{
 	width: 35%;
@@ -142,8 +141,6 @@ nav{
 	margin: 10px 0px;
 	color: #000000;
 }
-
-
 .p-heading,
 .t-heading,
 .s-heading{
