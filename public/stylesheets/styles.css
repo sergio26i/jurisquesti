@@ -4,6 +4,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background-color:#eeeeee;
+	font-family: ;
 }
 ul{
 	list-style:none;
@@ -35,7 +36,7 @@ a{
 	margin-left: -85px;
 	margin-bottom: 10px;
 	padding: 5px 10px;
-	font-family: myriad pro regular;
+	font-family: myriad pro;
 	font-weight: 500;
 }
 .menu-left img{
@@ -53,6 +54,7 @@ a{
 	margin-left: 0;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	margin-top: -2px;
 	border-radius: 20px;
 	border:none;
 	color:#ffffff;
@@ -149,7 +151,9 @@ nav{
 	justify-content: center;
 	align-items: center;
 }
-
+.s-heading p {
+	color: #313131;
+}
 .p-heading p:nth-child(1),
 .t-heading p:nth-child(1),
 .s-heading p:nth-child(1){
@@ -157,8 +161,31 @@ nav{
 	font-size: 25px;
 	width:40%;
 	text-align: center;
-	margin:10px;
-	
+	margin:10px;	
+}
+.s-heading p:nth-child(1)::after {
+	content:" ";
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.5rem;
+    margin-left: 13.5rem;
+    border-top: 2px solid #ffffff;
+    background: none;
+    width: 20%;	
+}
+.p-heading p:nth-child(1)::after {
+	content:" ";
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.5rem;
+    margin-left: 13.5rem;
+    border-top: 2px solid black;
+    background: none;
+    width: 20%;
 }
 .s-heading p:nth-child(1){
 	color: #ffffff;
@@ -196,6 +223,13 @@ nav{
 	font-family: myriad pro;
 	color:#313131;
 	font-size: 14px;
+}
+.s-box p:hover{
+	color: #FFFFFF;
+}
+.s-box:hover{
+	background: #353745;
+	color: #FFFFFF;
 }
 .price-button,
 .service-button{
@@ -266,7 +300,14 @@ nav{
 	justify-content: center;
 	margin-top: 20px;
 }
-.contact img{
+.contact img:nth-child(1){
+	width: 50px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background: #4530c3;
+	border-radius: 50%;
+}
+.contact img:nth-child(2){
 	width: 230px;
 }
 .contact img:hover{
@@ -275,7 +316,7 @@ nav{
 }
 .contact{
 	width:100%;
-	height: 420px;
+	height: 460px;
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
@@ -311,17 +352,19 @@ nav{
 }
 .p-box{
 	width: 220px;
-	height: 280px;
-	border-radius: 10px;
-	background-color: #eeeeee;
-	box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+	height: 300px;
+	background-color: #353745;
 	margin: 30px 5px;
+	margin-bottom: 70px;
 	font-family: myriad pro;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 	justify-content: space-evenly;
-	padding: 20px 0px;
+	padding: 20px 0px;	
+}
+.p-box:hover {
+	background: #4530c3;
 }
 .p-box-conatiner{
 	display: flex;
@@ -341,9 +384,9 @@ nav{
 	font-weight: bold
 }
 .price p{
-	color: #3d3d3e;
+	color: #ffffff;
 	font-size:14px;
-	margin: 0px;
+	margin-top: 10px;
 	font-weight: bold;
 	
 }
@@ -356,7 +399,11 @@ nav{
 	height: 100px;
 	border-radius: 50%;
 	background: black;
-	border: 1px solid #faa41a;
+}
+.icon-box img {
+	width: 40px;
+	margin-bottom: -16px;
+	margin-top: -19px;
 }
 .p-box-details{
 	color: #ffffff;
