@@ -84,7 +84,6 @@ nav{
     margin-left: 330px;
     padding: 30px;
     animation: fadeInRight 1s ease;
-	border-bottom: 1px solid #b1aeae;
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 }
 
@@ -93,6 +92,12 @@ nav{
     content: '';
     clear: both;
     display: table;
+}
+.home-box img{
+	width: 60px;
+	margin-top: -20px;
+	margin-left: 17.5rem;
+	cursor: pointer;
 }
 .home-box h3{
     font-size: 18px;
@@ -104,7 +109,6 @@ nav{
 	padding-left: 10px;
 	line-height: 25px;
 	border: 1px solid #313131;
-	border-radius: 15px;
 }
 
 .btn {
@@ -129,7 +133,21 @@ nav{
 	background-color: #2b1d75;
 	color: #ffffff;
 }
-
+.text-box{
+	margin-top: 20px;
+}
+.logo-box{
+	width:100%;
+}
+.logo-box img{
+	width: 8%;
+	background: #FFFFFF;
+	padding: 10px;
+	border: 2px solid #313131;
+}
+img{
+	width: 80%;
+}
 footer{
 	background-color:#353745;
 	display: flex;

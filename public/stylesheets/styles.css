@@ -1,10 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-	margin: 0px;
-	padding: 0px;
-	background-color:#eeeeee;
-	font-family: ;
 }
 ul{
 	list-style:none;
@@ -12,71 +7,57 @@ ul{
 a{
 	text-decoration:none;
 }
-*{
+*{  margin: 0;
+	padding: 0;
 	box-sizing:border-box;
 	color:#000000;
+	font-size: 100%;
 }
 .main{
-
-    height:100vh;
-	background-image:url("/images/fundo intel 2.png");
-	background-position:bottom;
-	background-repeat: no-repeat;
-	background-size:cover;	
+	display: flex;
+	height:30vh;
+	background: cornflowerblue;
 }
-.menu-left{
-	display:flex;
-	
+nav{
+	width: 100%;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+	flex-grow: 1;
+    padding: 20px 50px;
+	background-color:#eeeeee;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+	position: fixed;	
 }
-.menu-left p{
+.main p{
 	color: #ffffff;
 	background: #353745;
 	font-size: 14px;
-	margin: -3px 15px;
-	margin-left: -85px;
-	margin-bottom: 10px;
-	padding: 5px 10px;
+	display: flex;
+	padding: 4px 10px;
 	font-family: myriad pro;
 	font-weight: 500;
 }
-.menu-left img{
-	width: 35%;
-	margin-top: -10px;
+.logo{
+	width: 150px;
 	display: flex;
-
 }
-.menu-left img:hover{
+.img:hover{
 	opacity: 0.5;
 }
 .sign-in{
-	width:100px;
-	height: 35px;
-	margin-left: 0;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-top: -2px;
 	border-radius: 20px;
 	border:none;
 	color:#ffffff;
 	background-color: #faa41a;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 7px 30px;
 	font-family: calibri;
 	font-weight: bold;
 	box-shadow:  2px 2px 6px rgba(0,0,0,0.1);
-}
-nav{
-	width: 67.45%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    padding: 12px 40px;
-	padding-bottom: 0px;
-	margin-left: 13.75rem;
-	background-color:#eeeeee;
-	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
-	position: fixed;
 }
 .sign-in:hover{
 	background-color: #2b1d75;
@@ -84,22 +65,42 @@ nav{
 	transition: all ease 0.2s;
 	text-decoration: underline;
 }
-.button-quest{
-	text-align: center;
+@media (max-width:780px){
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px 0;
+	}
+	.logo{
+		margin-bottom: 5px;
+	}
+	.main p{
+		display: none;
+	}
+	.sign-in{
+		margin-bottom: 10px;
+	}
+}
+.services{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: cornflowerblue;
 }
 .service-button-1{
-	width: 170px;
-	height: 40px;
 	border-radius: 20px;
-	background-color: #faa41a;
+	background-color: #2b1d75;
+	padding: 10px 30px;
+	margin-bottom: 10px;
+	font-size: 14px;
 	border:none;
 	outline: none;
 	color:#ffffff;
-	margin: 10px;
 	cursor: pointer;
 }
 .service-button-1:hover{
-	background-color: #2b1d75;
+	background-color: #faa41a;
 	transition: all ease 0.2s;
 	text-decoration: underline;
 
@@ -111,11 +112,10 @@ nav{
 	padding: 0px;
 	color: #3d3d3e;
 }
-
 .g-heading span{
 	width: 30px;
 	height: 30px;
-	background-color:#4530c3;
+	background-color: #2b1d75;
 	display: flex;
 	border-radius: 10px;
 }
@@ -152,7 +152,7 @@ nav{
 	align-items: center;
 }
 .s-heading p {
-	color: #313131;
+	color: #ffffff;
 }
 .p-heading p:nth-child(1),
 .t-heading p:nth-child(1),
@@ -163,30 +163,17 @@ nav{
 	text-align: center;
 	margin:10px;	
 }
-.s-heading p:nth-child(1)::after {
-	content:" ";
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 0.5rem;
-    margin-left: 13.5rem;
-    border-top: 2px solid #ffffff;
-    background: none;
-    width: 20%;	
+.s-heading hr{
+	width: 100px;
+	border: 1px solid #ffffff;
+	margin-bottom: 10px;
 }
-.p-heading p:nth-child(1)::after {
-	content:" ";
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 0.5rem;
-    margin-left: 13.5rem;
-    border-top: 2px solid black;
-    background: none;
-    width: 20%;
+.p-heading hr{
+	width: 100px;
+	border: 1px solid #000000;
+	margin-bottom: 10px;
 }
+
 .s-heading p:nth-child(1){
 	color: #ffffff;
 }
@@ -207,22 +194,31 @@ nav{
 .s-heading{
 	margin: 0px 0px 30px 0px;
 }
+.services-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
 .s-box {
 	width: 220px;
-	padding: 20px;
+	height: 120px;
+	padding: 10px 15px;
 	background-color: #eeeeee;
 	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 	display: flex;
 	text-align: center;
+	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin:10px 5px;
-	border-radius: 10px;
+	margin: 5px;
 }
 .s-box p{
 	font-family: myriad pro;
 	color:#313131;
 	font-size: 14px;
+	align-items: center;
 }
 .s-box p:hover{
 	color: #FFFFFF;
@@ -238,13 +234,13 @@ nav{
 	border:none;
 	outline:none;
 	border-radius:20px;
-	color:#4530c3;
-	border:1px solid #4530c3;
+	color: #2b1d75;
+	border:1px solid #2b1d75;
 }
 .price-button:hover,
 .service-button:hover{
 	color:#ffffff;
-	background-color:#4530c3;
+	background-color: #2b1d75;
 	transition: all ease 0.5s;
 }
 
@@ -255,11 +251,6 @@ nav{
 	flex-wrap: wrap;
 	margin-bottom: 40px;
 }
-.services{
-	padding-top: 30px;
-	margin-top: -540px;
-}
-
 .team-img{
 	width:100px;
 	height: 100px;
@@ -304,7 +295,7 @@ nav{
 	width: 50px;
 	padding: 5px;
 	margin-bottom: 10px;
-	background: #4530c3;
+	background: #340fda;
 	border-radius: 50%;
 }
 .contact img:nth-child(2){
@@ -329,7 +320,7 @@ nav{
 	width: 170px;
 	height: 40px;
 	border-radius: 20px;
-	background-color: #4530c3;
+	background-color: #340fda;
 	border:none;
 	outline: none;
 	color:#ffffff;
@@ -345,10 +336,12 @@ nav{
 }
 
 .palns{
-	margin: 2% 0px 0px 0px;
-	background: #eeeeee;
-	margin-top: -10px;
-	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 30px 50px;
 }
 .p-box{
 	width: 220px;
@@ -360,11 +353,11 @@ nav{
 	display: flex;
 	flex-direction:column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	padding: 20px 0px;	
 }
 .p-box:hover {
-	background: #4530c3;
+	background: #2b1d75;
 }
 .p-box-conatiner{
 	display: flex;
@@ -379,7 +372,7 @@ nav{
 	font-size:18px;
 }
 .price a{
-	color:#4530c3;
+	color: #2b1d75;
 	font-size: 25px;
 	font-weight: bold
 }
@@ -423,44 +416,17 @@ button:active{
 
 footer{
 	background-color:#353745;
+	height: 120px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-sizing: border-box;
-}
-
-.dw-footer ul{
-	font-family: calibri;
-	padding-top:0px 20px;
-	list-style-type: none;
-	
-}
-.dw-footer h1{
-	color: #ffffff;
-	font-size:20px;
-	font-family: calibri;
-	margin-bottom: 10px;
-}
-.dw-footer ul li a{
-	font-size: 16px;
-	color:#ffffff;
-	text-decoration: none;
-	
-}
-
-.dw-footer{
-	display: flex;
-	justify-content:space-between;
-	padding:3% 0px;
-	margin:5px;
-	width:80%;
-	flex-wrap: wrap;
-	color: #ffffff;
-	
+	justify-content: center;
+	text-align: center;
 }
 
 .social-icons{
 	display:flex;
+	margin-bottom: 10px;
 }
 .social-icons a{
 	width: 35px;
@@ -484,7 +450,6 @@ footer{
 .copyright{
 	font-family: calibri;
 	font-size:12px;
-	margin:10px;
 	text-align: center;
 	color: #ffffff;
 }
@@ -494,10 +459,6 @@ footer{
 	list-style-type: none;
 	text-decoration: none;
 
-}
-.dw-footer ul li a:hover{
-	color:#9697A0;
-	
 }
 .social-icons a:hover{
 	background-color:#9a9ff6;
@@ -509,10 +470,6 @@ footer{
 }
 
 @media(max-width:360px){
-	main{
-		background-image:url("/images/banner.png");
-	}
-
 	.menu-left p{
 		display: none;
 	}
@@ -520,12 +477,6 @@ footer{
 		width: 50%;
 		margin-top: -5px;
 		margin-left: -30px;
-	}
-	.sign-in{
-		border-radius: none;
-		margin-left: -40px;
-		margin-bottom: 0px;
-		font-size: 18px;	
 	}
 	.s-heading p:nth-child(1){
 		width: 100%;
@@ -553,21 +504,44 @@ footer{
 	.search h1{
 		margin:20px;
 	}
+	.s-heading p:nth-child(1){
+		width: 250px;
+	}
+	.s-heading:nth-child(2){
+		margin: 0 80px 30px 80px;
+		text-align: center;
+	}
+	.services-container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 20px 30px 20px;
+
+	}
+	.p-heading{
+		margin: 0 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.s-box{
+		height: 90px;
+		padding: 0 20px;
+	}
 	.s-box,
 	.p-box{
 		flex-grow:1;
 		margin: 5px;
 	}
+	.p-box{
+		margin-top: 30px;
+	}
 	.s-box:nth-child(4),
 	.p-box:nth-child(4){
-		width: 100%;
-		
-		
+		width: 100%;	
 	}
-	
-	.p-box:nth-child(4){
-		height: 250px;
-	}
+
 	
 }
 	
@@ -580,40 +554,9 @@ footer{
 	nav{
 		padding:15px 30px;
 	}
-	.sign-in{
-		height: 30px;
-		width: 80px;
-		font-size: 12px;
-	}
-	.service-button{
-		display:none;
-	}
-	
 	.s-box{
 		flex-direction: row;
 		width: 100%;
-		padding: 5px;
-	}
-	.s-box:hover{
-		transform:scale(1);
-		background-color:;
-	}
-	.services{
-		background-image: none;
-	}
-	.s-heading p:nth-child(2){
-		color:#ffffff;
-	}
-	.s-heading p:nth-child(1){
-		color:#ffffff;
-	}
-	.s-icon{
-		height:40px;
-		width: 40px;
-	}
-	.s-box a{
-		font-size:16px;
-		margin: 0px 15px;
 	}
 	
 	.team-img{
@@ -629,25 +572,17 @@ footer{
 		.t-id p{
 		font-size: 12px;
 	}
-	.contact{
-		height:400px;
-	}
 	.contact h1{
 		font-size:18px;
-	}
-	.contact button{
-		height: 33px;
-		width: 120px;
-		font-size: 12px;
 	}
 	.p-box{
 		width:80%;
 		margin: 10px;
-		
-	
 	}
-	.p-heading p{
-		width: 80%;
+	.p-heading p:nth-child(2){
+		text-align: center;
+		margin: 0 60px 0 60px;
+
 	}
 	.dw-footer{
 		flex-direction: column;
